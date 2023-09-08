@@ -1,6 +1,9 @@
 import React, { useContext, useState } from 'react'
 import { samplecontext } from './App'
 import { MDBCard, MDBCardBody, MDBCardImage, MDBCol, MDBIcon, MDBRow, MDBTypography } from "mdb-react-ui-kit";
+import { Link } from 'react-router-dom';
+import './App.css';
+
 
 const Cart = () => {
     const sample= useContext(samplecontext)
@@ -63,9 +66,9 @@ const Cart = () => {
                     <MDBCardBody className="p-4">
                         <MDBRow className="justify-content-between align-items-center">
                         <MDBCol md="2" lg="2" xl="2">
-                            <MDBCardImage className="rounded-3" fluid
+                        <Link  to={`/viewp/${i.id}`}> <MDBCardImage className="rounded-3" fluid
                             src={i.images[0]} style={{height: "120px"}}
-                            alt="Cotton T-shirt" />
+                            alt="Cotton T-shirt" /></Link>
                         </MDBCol>
                         <MDBCol md="3" lg="3" xl="3">
                             <p className="lead fw-normal mb-2">{i.title}</p>

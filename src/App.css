@@ -21,21 +21,10 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #ffffffa8;
+  color: #f1dc1bd2;
 }
 
-.App-link {
-  color: #2f3b53;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 sup {
   top: -.0em;
   position: relative;
@@ -50,7 +39,7 @@ body{
   backgroundColor: #a81d1d83
 } */
 .cardd:hover{
-background-color: rgba(194, 189, 189, 0.541);
+background-color: rgba(245, 242, 242, 0.863);
 transition-duration: 0.6s;
 color: white;
 }
@@ -84,33 +73,8 @@ form {
   
 }
 
-form #decrease {
-  margin-right: -4px;
-  border-radius: 8px 0 0 8px;
+
+.cardtext{
+  color: black;
 }
 
-form #increase {
-  margin-left: -4px;
-  border-radius: 0 8px 8px 0;
-}
-
-form #input-wrap {
-  margin: 0px;
-  padding: 0px;
-}
-
-input#number {
-  text-align: center;
-  border: none;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 40px;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
