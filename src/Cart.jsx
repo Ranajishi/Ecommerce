@@ -39,7 +39,6 @@ const Cart = () => {
     }
 
     const Remove = (index) => { 
-        // setid(index);
         setcartproducts(cartproducts.filter((_, i) => i !== index))
 
         // setquantity(quantity.filter((_, i) => i !== id))
